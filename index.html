@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Maid Questionnaire</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>The Maid Questionnaire</h1>
+  </header>
+
+  <main>
+    <form id="paymentForm">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" placeholder="Name" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" placeholder="e.g 07XXXXXXXX" required>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" placeholder="e.g. address@gmail.com" required>
+
+      <label for="needMaid">Do you need a maid?</label>
+    <select id="needMaid" name="needMaid" required>
+      <option value="">-- Select --</option>
+      <option value="Yes">Yes</option>
+      <option value="No">No</option>
+    </select>
+
+    <label for="haveMaid">Do you already have a maid?</label>
+    <select id="haveMaid" name="haveMaid" required>
+      <option value="">-- Select --</option>
+      <option value="Yes">Yes</option>
+      <option value="No">No</option>
+    </select>
+
+    <label for="switchMaid">If yes, do you want to switch your maid for another one?</label>
+    <select id="switchMaid" name="switchMaid">
+      <option value="">-- Select --</option>
+      <option value="Yes">Yes</option>
+      <option value="No">No</option>
+    </select>
+
+    <label for="switchReason">If so, give a brief reason why</label>
+    <textarea id="switchReason" name="switchReason" rows="3" placeholder="Reason for switching (if any)"></textarea>
+
+    <label for="considerVettedMaid">Would you consider a well-trained and vetted maid?</label>
+    <select id="considerVettedMaid" name="considerVettedMaid" required>
+      <option value="">-- Select --</option>
+      <option value="Yes">Yes</option>
+      <option value="No">No</option>
+    </select>
+
+    <label for="willingToPay">If yes, how much would you be willing to pay? (UGX)</label>
+    <input id="willingToPay" name="willingToPay" type="number" min="0" step="1000" placeholder="e.g., 200000" required/>
+
+    <label for="paymentType">
+      Would you prefer a periodical subscription or a personal payment?
+      <p>Periodical subscription: Pay to the company on a monthly or weekly basis for The Maid services.</p>
+      <p>Personal payment: Pay to the The Maid directly.</p>
+    </label>
+    <select id="paymentType" name="paymentType" required>
+      <option value="">-- Select --</option>
+      <option value="Subscription">Periodical Subscription</option>
+      <option value="Personal Payment">Personal Payment</option>
+    </select>
+
+      <label for="paymentPreference">Preferred Payment Method:</label>
+      <select id="paymentPreference" name="paymentPreference" required>
+        <option value="">--Select--</option>
+        <option value="Mobile Money">Mobile Money</option>
+        <option value="Bank Transfer">Bank Transfer</option>
+        <option value="Cash">Cash</option>
+        <option value="Other">Other</option>
+      </select>
+
+      <div>
+        <label>Would you like to subscribe to <strong>The Maid</strong> service?</label><br>
+        <input type="radio" name="subscribe" value="Yes" required> Yes  
+        <input type="radio" name="subscribe" value="No" required> No
+      </div>
+
+      <label for="message">If Yes, send us a short message:</label>
+      <textarea id="message" name="message" placeholder="Maid problems and anything else..." rows="10"></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <div>
+      <p id="statusMessage"></p>
+    </div>
+  </main>
+
+  <footer>
+    <h3>Get In Touch</h3>
+    <p><a href="https://nellyjohnson696@gmail.com" target="_blank">Email us -></a></p>
+    <p><a href="https://wa.me/256786911950" target="_blank">Whatsapp -></a></p>
+    <p>&copy; 2025 The Maid. All rights reserved.</p>
+
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+/* General styles */
+body {
+  background: #f4f8f6;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #2f7a4a;
+}
+
+header {
+  background: #234d2e;
+  color: #fff;
+  padding: 2rem 0 1rem 0;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+}
+
+form {
+  background: #e6f4ea;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(20, 83, 45, 0.08);
+  padding: 2rem 2.5rem;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+label {
+  font-weight: 500;
+  color: #234d2e;
+
+  p{
+    font-size: small;
+    color: rgb(101, 101, 101);
+  }
+}
+
+input,
+select,
+textarea {
+  padding: 0.6rem;
+  border: 1px solid #b7e4c7;
+  border-radius: 6px;
+  font-size: 1rem;
+  background: #fff;
+  color: #183a1d;
+  margin-bottom: 20px;
+  transition: border 0.2s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border: 1.5px solid #14532d;
+  outline: none;
+}
+
+input[type="radio"] {
+  accent-color: #14532d;
+  margin-right: 0.4rem;
+}
+
+button[type="submit"] {
+  background: #14532d;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.8rem 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 0.7rem;
+  transition: background 0.2s;
+}
+
+button[type="submit"]:hover {
+  background: #183a1d;
+}
+
+#statusMessage {
+  margin-top: 1.5rem;
+  text-align: center;
+  color: #14532d;
+}
+
+footer{
+  padding: 50px;
+  background-color: #234d2e;
+  color: rgb(194, 194, 194);
+
+  a{
+    text-decoration: none;
+    color: rgb(194, 194, 194);
+  }
+}
+
+/* Mobile responsive styles */
+@media (max-width: 600px) {
+  header {
+    padding: 1.2rem 0 0.7rem 0;
+    font-size: 1.1rem;
+    margin-bottom: 1.2rem;
+    padding: 10px;
+  }
+
+  main {
+    min-height: unset;
+    padding: 0 0.5rem;
+    margin: 20px;
+  }
+
+  form {
+    padding: 1.2rem 0.7rem;
+    max-width: 100%;
+    box-shadow: 0 1px 6px rgba(20, 83, 45, 0.08);
+    gap: 0.8rem;
+  }
+
+  label {
+    font-size: 1rem;
+  }
+
+  input,
+  select,
+  textarea {
+    font-size: 0.98rem;
+    padding: 0.5rem;
+  }
+
+  button[type="submit"] {
+    font-size: 1rem;
+    padding: 0.7rem 0;
+  }
+}
