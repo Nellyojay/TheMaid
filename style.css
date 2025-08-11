@@ -35,6 +35,7 @@ form, .container {
   gap: 1.1rem;
 }
 .intro{
+  color: #234d2e;
   display: flex;
   justify-content: center;
   align-items: center;
