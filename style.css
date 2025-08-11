@@ -15,7 +15,7 @@ header {
   margin-bottom: 2rem;
 }
 
-main {
+main, .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -23,16 +23,31 @@ main {
   min-height: 60vh;
 }
 
-form {
+form, .container {
   background: #e6f4ea;
   border-radius: 10px;
-  box-shadow: 0 2px 12px rgba(20, 83, 45, 0.08);
+  box-shadow: 0 2px 12px rgba(20, 83, 45, 0.27);
   padding: 2rem 2.5rem;
   width: 100%;
   max-width: 400px;
   display: flex;
   flex-direction: column;
   gap: 1.1rem;
+}
+.intro{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  a{
+    text-decoration: none;
+    background-color: #183a1de6;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(20, 83, 45, 0.368);
+  }
 }
 
 label {
@@ -141,4 +156,4 @@ footer{
     font-size: 1rem;
     padding: 0.7rem 0;
   }
-}
+}  
