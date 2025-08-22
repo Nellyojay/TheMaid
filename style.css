@@ -42,6 +42,7 @@ form, .container {
   height: 100vh;
 
   a{
+    font-size: small;
     text-decoration: none;
     background-color: #183a1de6;
     padding: 10px;
